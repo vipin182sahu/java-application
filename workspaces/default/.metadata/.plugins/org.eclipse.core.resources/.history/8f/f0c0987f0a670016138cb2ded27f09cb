@@ -1,0 +1,22 @@
+package Reflection;
+
+import com.sun.java.util.jar.pack.Package.Class.Method;
+
+public class Temp1 {
+	public static void main(String[] ss) throws Exception{
+		PrivateObject privateObject = new PrivateObject("the private value");
+		Class c = int.class;
+		System.out.println(c.getName());
+		Method privateStringMethod= PrivateObject.class.getDeclaredMethod("getprivateString",null);
+		privateStringMehtod
+	}
+}
+class PrivateObject{
+	private String privateString = null;
+	public PrivateObject(String privaeString){
+		this.privateString = privateString;
+	}
+	private String getPrivateString(){
+		return this.privateString;
+	}
+}

@@ -1,0 +1,30 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+public class Calculater extends JButton {
+	JFrame f,f1,f2;
+	JButton b[];
+	TextField tf;
+	Calculater(String s){
+		 f = new JFrame(s);
+		 b = new JButton[12];
+		 tf = new TextField();
+		 tf.setBounds(30,30,300,300);
+		 f1.add(tf);
+		 String s1[] = {"1","2","3","4","5","6","7","8","9",".","0","="};
+		 for(int i=0; i<12; i++){
+			b[i] = new JButton(s1[i]);
+			f.add(b[i]); 
+		 }
+		f.setLayout(new GridLayout(4,3));
+	 
+		f2.add(f1);
+		f2.add(f);
+		f2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f2.setSize(300,500);
+		f2.setVisible(true);
+	}
+	public static void main(String[] ss){
+		new Calculater("Grid Layout");
+	}
+}

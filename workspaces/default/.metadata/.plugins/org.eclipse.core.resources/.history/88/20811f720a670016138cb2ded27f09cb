@@ -1,0 +1,16 @@
+package Reflection;
+
+public class Temp1 {
+	public static void main(String[] ss) throws Exception{
+		
+	}
+}
+class PrivateObject{
+	private String privateString = null;
+	public PrivateObject(String privaeString){
+		this.privateString = privateString;
+	}
+	private String getPrivateString(){
+		return this.privateString;
+	}
+}

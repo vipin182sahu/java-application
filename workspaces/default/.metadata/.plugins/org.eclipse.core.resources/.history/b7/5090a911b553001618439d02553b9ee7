@@ -1,0 +1,24 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+public class Calculater extends Button {
+	JFrame f;
+	JButton b[];
+	Calculater(String s){
+		f = new JFrame(s);
+		b = new JButton[12];
+		String s1[] = {"North", "South", "East", "West", "Center","North", "South", "East", "West", "Center" };
+		for (int i = 0; i < b.length; i++) {
+			b[i] = new JButton(s1[i]);
+			f.add(b[i]);
+		}
+		f = new JFrame(s);
+		f.setLayout(new GridLayout(4,3));
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setSize(400,400);
+		f.setVisible(true);
+	}
+	public static void main(String ss){
+		new Calculater("Grid Layout");
+	}
+}

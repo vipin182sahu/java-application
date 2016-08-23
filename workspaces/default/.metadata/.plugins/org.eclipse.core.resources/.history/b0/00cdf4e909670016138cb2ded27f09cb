@@ -1,0 +1,14 @@
+package Reflection;
+
+public class Temp1 {
+
+}
+class PrivateObject{
+	private String privateString = null;
+	public PrivateObject(String privaeString){
+		this.privateString = privateString;
+	}
+	private String getPrivateString(){
+		return this.privateString;
+	}
+}

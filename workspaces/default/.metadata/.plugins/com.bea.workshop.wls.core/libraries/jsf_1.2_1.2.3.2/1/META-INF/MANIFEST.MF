@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.5
+Created-By: R27.6.0-50_o-100423-1.6.0_05-20080626-2105-windows-ia32 (B
+ EA Systems, Inc.)
+Specification-Title: JavaServer Faces
+Specification-Version: 1.2
+Implementation-Title: JSF Reference Implementation
+Implementation-Version: 1.2.3.2
+Implementation-Vendor: Sun Microsystems, Inc.
+Extension-Name: jsf
+

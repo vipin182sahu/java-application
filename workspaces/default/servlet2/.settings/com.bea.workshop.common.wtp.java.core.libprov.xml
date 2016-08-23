@@ -1,0 +1,14 @@
+<install-record>
+  <entry>
+    <facet id="workshop.jstl"/>
+    <provider id="j2ee-library-provider-workshop.jstl.1.2"/>
+  </entry>
+  <entry>
+    <facet id="wls.logging"/>
+    <provider id="j2ee-library-provider-wls.logging-web"/>
+  </entry>
+  <entry>
+    <facet id="workshop.jsf"/>
+    <provider id="j2ee-library-provider-workshop.jsf.1.2"/>
+  </entry>
+</install-record>

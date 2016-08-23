@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Oracle WebLogic Server v10.3 JRE"/>
+	<classpathentry kind="con" path="com.bea.workshop.wls.syslib"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="com.bea.workshop.wls.j2eelib/jstl/exact/1.2"/>
+	<classpathentry kind="src" path=".apt_src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="com.bea.workshop.wls.j2eelib/wls-commonslogging-bridge-war/exact/1.0"/>
+	<classpathentry kind="con" path="com.bea.workshop.wls.j2eelib/jsf/exact/1.2"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

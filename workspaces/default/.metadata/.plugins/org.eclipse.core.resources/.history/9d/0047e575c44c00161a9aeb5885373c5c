@@ -1,0 +1,38 @@
+package Graphics;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+class MyCanvas1 extends Canvas
+{
+	int flag = 0;
+	public void paint(Graphics g)
+	{
+		if(flag==1)
+		{
+			g.setColor(Color.red);
+			g.drawLine(50,50,300,70);
+		}
+	}
+}
+class Myf2 implements ActionListener{
+	MyCanvas2 m = new MyCanvas2();
+	Myf2(){
+		Frame f = new Frame("graphics");
+		Button b = new Button("line");
+		
+		f.add(m);
+		f.add(b);
+		b.addActionListener(this);
+		f.setSize(400,400);
+		f.setLayout(new GridLayout(2,1));
+		f.setVisible(true);
+	}
+	public void actionPerformed(ActionEvent e){
+		m.flag =1 ;
+		m.repaint();
+	}
+	public static void main(String[] ss){
+		new Myf2();
+	}
+}

@@ -1,0 +1,18 @@
+package Reflection;
+import java.awt.*;
+import java.lang.reflect.*;
+public class sampleSuper {
+	public static void printSuperClasses(Object o){
+		Class subClass = o.getClass();
+		Class superClass = subClass.getSuperclass();
+		while(superClass!= null){
+			System.out.println(superClass.getName());
+			subClass = superClass;
+			superCalss = subClass.getSuperclass();
+		}
+	}
+	public static void main(String[] ss){
+		Frame f = new Frame("ok");
+		printSuperClasses(f);
+	}
+}

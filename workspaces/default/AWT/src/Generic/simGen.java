@@ -1,0 +1,32 @@
+package Generic;
+
+ class TwoGen <T,V>{
+	T ob1;
+	V ob2;
+	TwoGen(T o1,V o2){
+		ob1 = o1;
+		ob2 = o2;
+	}
+	void show(){
+		System.out.println("Tupe of T is"+ ob1.getClass().getName());
+		System.out.println("type of V is "+ ob2.getClass().getName());
+	}
+	T getob1(){
+		return ob1;
+	}
+	V getob2(){
+		return ob2;
+	}
+}
+ class simGen{
+	 public static void main(String[] ss){
+		 TwoGen<Integer,String> tgob = new TwoGen<Integer,String>(99,"generic");
+		 tgob.show();
+		 int v = tgob.getob1();
+		 System.out.println("value:"+v);
+		 
+		 String str =(String) tgob.getob2();
+		 System.out.println("value:"+str);
+		 
+	 }
+}

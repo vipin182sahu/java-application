@@ -1,0 +1,49 @@
+package Reflection;
+
+import java.lang.reflect.*;
+import java.awt.*;
+
+class SampleName {
+	public static void printName(Object obj) {
+		Class c = obj.getClass();
+		System.out.println(c.getName());
+	}
+
+	public static void printName(String str) {
+		try {
+			Class c = Class.forName(str);
+			System.out.println(c.getName());
+
+			StringBuffer sb = (StringBuffer) c.newInstance();
+			System.out.println(sb.length());
+			System.out.println(sb.capacity());
+			try{
+			Temp temp = (Temp) c.newInstance();
+			temp.show();
+			}catch(Exception e){}
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+	public static void main(String... s) {
+		Button b = new Button("OK");
+		printName(b);
+		printName("java.lang.StringBuffer");
+		printName("Temp");
+
+		Class c = java.lang.Thread.class;
+		System.out.println(c.getName());
+	}
+}
+
+class Temp {
+	/*Temp() {
+		System.out.println("default Constructor");
+	}*/
+
+	void show() {
+		System.out.println("creation of object via reflection.");
+	}
+}

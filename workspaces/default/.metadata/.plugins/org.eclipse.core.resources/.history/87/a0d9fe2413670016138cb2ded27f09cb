@@ -1,0 +1,16 @@
+package Generic;
+class Gen<T extends Number>{
+	T ob;
+	T vals[];
+	Gen(T o,T []nums){
+		ob = o;
+		vals = nums;
+	}
+}
+public class genArrays {
+	public static void main(String[] ss){
+		Gen<?> gens[] = new Gen<?>[10];
+		gens[0]= new Gen<Integer>(10,n);
+		gens[1]= new Gen<Float>(2.3f,new float[]{1.2f});
+	}
+}

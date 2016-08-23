@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Program Files (x86)\Java\jre1.8.0_60" version="1.8.0_60">
+<bootpath>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_60\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_60\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_60\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\bea\jrockit_160_05\jre" version="1.6.0_05">
+<bootpath>
+<entry path="C:\bea\jrockit_160_05\jre\bin\jrockit\jrockit1.6.0.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\bin\jrockit\jmapi.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\bin\jrockit\jmxmapi.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\bin\jrockit\rmp.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\bin\jrockit\latency.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\lib\resources.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\lib\rt.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\lib\sunrsasign.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\lib\jsse.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\lib\jce.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\lib\charsets.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\bea\jrockit_160_05\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\bea\jrockit_160_05\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\bea\jrockit_160_05" version="1.6.0_05">
+<bootpath>
+<entry path="C:\bea\jrockit_160_05\jre\bin\jrockit\jrockit1.6.0.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\bin\jrockit\jmapi.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\bin\jrockit\jmxmapi.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\bin\jrockit\rmp.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\bin\jrockit\latency.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\lib\resources.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\lib\rt.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\lib\sunrsasign.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\lib\jsse.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\lib\jce.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\lib\charsets.jar"/>
+<entry path="C:\bea\jrockit_160_05\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\bea\jrockit_160_05\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\bea\jrockit_160_05\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

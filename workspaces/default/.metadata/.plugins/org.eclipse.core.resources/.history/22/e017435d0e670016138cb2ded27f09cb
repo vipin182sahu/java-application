@@ -1,0 +1,28 @@
+package Generic;
+
+class Gen<T>{
+	T ob;
+	Gen(T o){
+		ob = o;
+	}
+	T getOb(){
+		return ob;
+	}
+	void showtype(){
+		System.out.println("type of t is:"+ob.getClass().getName());
+	}
+}
+
+public class GenDemo {
+	public static void main(String[] ss){
+		Gen<Integer> iOb = new Gen<Integer>(88);
+		iOb.showtype();
+		int v = iOb.getOb();
+		System.out.println("value:"+v);
+		
+		Gen<String> strOb = new Gen<String>("hello");
+		strOb.showtype();
+		String v1 = strOb.getOb();
+		System.out.println("value:"+v1);
+	}
+}

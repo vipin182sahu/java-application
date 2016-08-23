@@ -1,0 +1,30 @@
+package Generic;
+class stats <T extends Number>{
+	T []nums;
+	stats(T []o){
+		nums = o;
+	}
+	
+	double average(){
+		double sum = 0.0;
+		for(int i= 0; i<nums.length; i++){
+			sum+= nums[i].doubleValue();
+			
+		}
+		return sum/nums.length;
+	}
+}
+public class BoundsDemo {
+	public static void main(String[] ss){
+		Integer inums[]={1,2,3,4,5};
+		stats<Integer> i = new stats<Integer>(inums);
+		double v = i.average();
+		System.out.println("integer aberage is:"+v);
+		
+		double dnums[]={1.1,2.2,3.3,4.4,5.5};
+		stats<Integer> i = new stats<Integer>(inums);
+		double v = i.average();
+		System.out.println("integer aberage is:"+v);
+		
+	}
+}

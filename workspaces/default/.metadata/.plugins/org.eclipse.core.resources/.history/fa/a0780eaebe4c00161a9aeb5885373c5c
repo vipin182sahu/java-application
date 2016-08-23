@@ -1,0 +1,18 @@
+package Graphics;
+
+import MyCanvas1;
+import Myf1;
+
+import java.awt.Frame;
+
+class Myf1{
+	Myf1(){
+		Frame f = new Frame("graphics");
+		MyCanvas1 c = new MyCanvas1();
+		f.add(c);
+		f.setSize(400,400);
+	}
+	public static void main(String[] ss){
+		new Myf1();
+	}
+}

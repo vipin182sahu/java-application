@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.wst.server.ui.launchConfigurationType">
+<stringAttribute key="client-id" value="org.eclipse.wst.server.ui.web"/>
+<stringAttribute key="launchable-adapter-id" value="com.bea.wlw.server.web"/>
+<stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:MyApp//servlet/RequestServlet"/>
+<stringAttribute key="module-artifact-class" value="org.eclipse.wst.server.core.util.WebResource"/>
+<stringAttribute key="server-id" value="7_6_16_11_32_PM3"/>
+</launchConfiguration>

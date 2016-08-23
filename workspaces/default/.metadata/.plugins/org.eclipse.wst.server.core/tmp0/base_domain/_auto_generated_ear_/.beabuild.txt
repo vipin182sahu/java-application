@@ -1,0 +1,6 @@
+C\:/bea/user_projects/workspaces/default/MyApp/WebContent = MyApp.war
+C\:/bea/user_projects/workspaces/default/MyApp/build/weboutput = MyApp.war
+C\:/bea/user_projects/workspaces/default/MyApp/build/classes = MyApp.war/WEB-INF/classes
+C\:/bea/user_projects/workspaces/default/servlet2/WebContent = servlet2.war
+C\:/bea/user_projects/workspaces/default/servlet2/build/weboutput = servlet2.war
+C\:/bea/user_projects/workspaces/default/servlet2/build/classes = servlet2.war/WEB-INF/classes

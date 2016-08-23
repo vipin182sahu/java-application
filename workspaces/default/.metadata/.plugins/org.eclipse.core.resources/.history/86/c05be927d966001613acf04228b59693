@@ -1,0 +1,14 @@
+package Reflection;
+import java.awt.*;
+import java.lang.reflect.*;
+
+class privateObject{
+	private String privateString = null;
+	public privateObject(String privateString){
+		this.privateString = privateString;
+	}
+	
+}
+public class Temp {
+	
+}

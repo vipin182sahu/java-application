@@ -1,0 +1,29 @@
+package Reflection;
+import java.lang.reflect.*;
+import java.awt.*;
+
+import org.omg.CORBA.Object;
+public class SampleName {
+	public static void printName(Object o){
+		Class c = o.getClass();
+		System.out.println(c.getName());
+	}
+	public static void printName(String s){
+		try{
+			Class c = Class.forName(s);
+			System.out.println(c.getName());
+			StringBuffer sb = (StringBuffer)c.newInstance();
+			
+			System.out.println(sb.length());
+			System.out.println(sb.capacity());
+		}catch(Exception e){}
+	}
+	
+	public static void main(String[] ss){
+		Button b = new Button("ok");
+		printName(b);
+		printName("java.lang.StringBuffer");
+		Class c = java.lang.Thread.class;
+		System.out.println(c.getName());
+	}
+}

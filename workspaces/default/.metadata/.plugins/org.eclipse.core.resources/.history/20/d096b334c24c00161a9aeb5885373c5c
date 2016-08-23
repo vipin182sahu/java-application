@@ -1,0 +1,19 @@
+package Graphics;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+class MyCanvas1 extends Canvas{
+	int flag = 0;
+	public void paint(Graphics g){
+		if(flag == 1){
+			g.setColor(Color.RED);
+			g.drawLine(70, 70, 200, 200);
+		}
+	}
+}
+
+class Myf2 implements ActionListener{
+	MyCanvas1 m = new MyCanvas1();
+	Myf2()
+}

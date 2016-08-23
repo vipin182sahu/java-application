@@ -1,0 +1,19 @@
+package Reflection;
+import java.awt.*;
+import java.lang.reflect.*;
+public class SampleModifier {
+	public static void printModifier(Object o)throws Exception{
+		Class c = Class.forName("java.awt.Graphics");
+		int m = c.getModifiers();
+		if(Modifier.isPublic(m))
+			System.out.println("public");
+		if(Modifier.isFinal(m));
+			System.out.println("final");
+		if(Modifier.isAbstract(m));
+			System.out.println("Abstract");
+	}
+	public static void main(String[] ss)throws Exception{
+		String a = new String("aa");
+		printModifier(a);
+	}
+}

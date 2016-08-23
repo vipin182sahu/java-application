@@ -1,0 +1,14 @@
+package Reflection;
+import java.awt.*;
+import java.lang.reflect.*;
+public class sapmleMethods {
+	public static void printMethods(Object o){
+		Class c = o.getClass();
+		Method m[] =c.getMethods();
+		for(int i = 0 ; i<m.length; i++){
+			System.out.println(m[i].getReturnType().getName());
+			System.out.println(""+m[i].getName());
+			System.out.println("(");
+		}
+	}
+}

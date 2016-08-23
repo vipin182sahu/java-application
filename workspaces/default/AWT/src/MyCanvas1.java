@@ -1,0 +1,11 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+public class MyCanvas1 extends Canvas {
+	public void paint(Graphics g){
+		g.setColor(Color.red);
+		g.drawLine(70,70,200,200);
+	}
+	
+}
+

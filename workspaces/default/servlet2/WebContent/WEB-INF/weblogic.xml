@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wls:weblogic-web-app xmlns:wls="http://www.bea.com/ns/weblogic/weblogic-web-app" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://www.bea.com/ns/weblogic/weblogic-web-app http://www.bea.com/ns/weblogic/weblogic-web-app/1.0/weblogic-web-app.xsd">
+    <wls:weblogic-version>10.3</wls:weblogic-version>
+    <wls:context-root>servlet2</wls:context-root>
+    <wls:library-ref>
+        <wls:library-name>jstl</wls:library-name>
+        <wls:specification-version>1.2</wls:specification-version>
+        <wls:exact-match>true</wls:exact-match>
+    </wls:library-ref>
+    <wls:library-ref>
+        <wls:library-name>wls-commonslogging-bridge-war</wls:library-name>
+        <wls:specification-version>1.0</wls:specification-version>
+        <wls:exact-match>true</wls:exact-match>
+    </wls:library-ref>
+    <wls:library-ref>
+        <wls:library-name>jsf</wls:library-name>
+        <wls:specification-version>1.2</wls:specification-version>
+        <wls:exact-match>true</wls:exact-match>
+    </wls:library-ref>
+</wls:weblogic-web-app>
