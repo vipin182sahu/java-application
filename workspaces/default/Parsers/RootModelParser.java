@@ -6,9 +6,9 @@ import org.json.JSONArray;
 class RootModelParser {
 
 		VersionModelParser version_parser = new VersionModelParser();
-		CreatorModelParser creator_parser = new CreatorModelParser();
 		CopyrightModelParser copyright_parser = new CopyrightModelParser();
 		Call_for_papersModelParser call_for_papers_parser = new Call_for_papersModelParser();
+		CreatorModelParser creator_parser = new CreatorModelParser();
 		Social_linksModelParser social_links_parser;
 
 		public RootModelParser() {
@@ -23,11 +23,11 @@ class RootModelParser {
 
 					VersionModel version = version_parser.parseVersionModel(jsobj.getJSONObject("version").toString());
 
-					CreatorModel creator = creator_parser.parseCreatorModel(jsobj.getJSONObject("creator").toString());
-
 					CopyrightModel copyright = copyright_parser.parseCopyrightModel(jsobj.getJSONObject("copyright").toString());
 
 					Call_for_papersModel call_for_papers = call_for_papers_parser.parseCall_for_papersModel(jsobj.getJSONObject("call_for_papers").toString());
+
+					CreatorModel creator = creator_parser.parseCreatorModel(jsobj.getJSONObject("creator").toString());
 
 					ArrayList<Social_linksModel> social_linkss = new ArrayList<>();
 					JSONArray social_links_arr = jsobj.getJSONArray("social_links");
@@ -38,7 +38,7 @@ class RootModelParser {
 
 					}
 
-					local_model = new RootModel(jsobj.getString("logo") , jsobj.getString("location_name") , jsobj.getString("end_time") , version, creator, jsobj.getString("state") , jsobj.getString("description") , jsobj.getString("organizer_description") , copyright, jsobj.getString("email") , jsobj.getString("start_time") , jsobj.getString("background_image") , jsobj.getString("code_of_conduct") , jsobj.getString("schedule_published_on") , call_for_papers, jsobj.getString("topic") , social_linkss, jsobj.getString("timezone") , jsobj.getString("privacy") , jsobj.getInt("id") , jsobj.getString("name") , jsobj.getString("type") , jsobj.getString("organizer_name") , );
+					local_model = new RootModel(jsobj.getString("organizer_description") , jsobj.getString("organizer_name") , version, copyright, jsobj.getString("logo") , jsobj.getString("topic") , call_for_papers, jsobj.getString("background_image") , jsobj.getString("code_of_conduct") , creator, jsobj.getString("type") , jsobj.getString("location_name") , jsobj.getString("state") , jsobj.getString("email") , jsobj.getString("start_time") , jsobj.getString("name") , jsobj.getInt("id") , jsobj.getString("description") , jsobj.getString("end_time") , jsobj.getString("privacy") , jsobj.getString("schedule_published_on") , social_linkss, jsobj.getString("timezone") , );
  			} 
 			catch (JSONException e){
 
