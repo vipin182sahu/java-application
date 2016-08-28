@@ -2,55 +2,55 @@ import java.util.ArrayList;
 
 class RootModel {
 
+	public String schedule_published_on;
+	public String organizer_description;
+	public ArrayList<Social_linksModel> social_links;
 	public String privacy;
-	public CopyrightModel _copyright;
-	public String end_time;
-	public String logo;
-	public String timezone;
-	public String description;
-	public String state;
 	public VersionModel _version;
 	public String email;
-	public String organizer_name;
-	public String location_name;
-	public String type;
 	public CreatorModel _creator;
-	public Call_for_papersModel _call_for_papers;
-	public String organizer_description;
 	public String background_image;
-	public String code_of_conduct;
-	public ArrayList<Social_linksModel> social_links;
-	public String schedule_published_on;
+	public String type;
+	public String description;
 	public int id;
-	public String name;
+	public CopyrightModel _copyright;
+	public String state;
 	public String start_time;
+	public Call_for_papersModel _call_for_papers;
 	public String topic;
+	public String code_of_conduct;
+	public String name;
+	public String location_name;
+	public String organizer_name;
+	public String logo;
+	public String timezone;
+	public String end_time;
 
-	public RootModel(String privacy, CopyrightModel copyright, String end_time, String logo, String timezone, String description, String state, VersionModel version, String email, String organizer_name, String location_name, String type, CreatorModel creator, Call_for_papersModel call_for_papers, String organizer_description, String background_image, String code_of_conduct, ArrayList<Social_linksModel> social_links, String schedule_published_on, int id, String name, String start_time, String topic) {
+	public RootModel(String schedule_published_on, String organizer_description, ArrayList<Social_linksModel> social_links, String privacy, VersionModel version, String email, CreatorModel creator, String background_image, String type, String description, int id, CopyrightModel copyright, String state, String start_time, Call_for_papersModel call_for_papers, String topic, String code_of_conduct, String name, String location_name, String organizer_name, String logo, String timezone, String end_time) {
 
+		this.schedule_published_on = schedule_published_on;
+		this.organizer_description = organizer_description;
+		this.social_links = social_links;
 		this.privacy = privacy;
-		this._copyright = copyright;
-		this.end_time = end_time;
-		this.logo = logo;
-		this.timezone = timezone;
-		this.description = description;
-		this.state = state;
 		this._version = version;
 		this.email = email;
-		this.organizer_name = organizer_name;
-		this.location_name = location_name;
-		this.type = type;
 		this._creator = creator;
-		this._call_for_papers = call_for_papers;
-		this.organizer_description = organizer_description;
 		this.background_image = background_image;
-		this.code_of_conduct = code_of_conduct;
-		this.social_links = social_links;
-		this.schedule_published_on = schedule_published_on;
+		this.type = type;
+		this.description = description;
 		this.id = id;
-		this.name = name;
+		this._copyright = copyright;
+		this.state = state;
 		this.start_time = start_time;
+		this._call_for_papers = call_for_papers;
 		this.topic = topic;
+		this.code_of_conduct = code_of_conduct;
+		this.name = name;
+		this.location_name = location_name;
+		this.organizer_name = organizer_name;
+		this.logo = logo;
+		this.timezone = timezone;
+		this.end_time = end_time;
 
 	}
 
